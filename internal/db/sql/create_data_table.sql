@@ -1,4 +1,4 @@
 CREATE table orders (
-    uid serial not null,
+    uid uuid not null,
     data jsonb not null
 );
