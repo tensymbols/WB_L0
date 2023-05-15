@@ -14,6 +14,6 @@ func NewPublisher(conn stan.Conn, chanName string) *Publisher {
 	}
 }
 
-func (p *Publisher) Publish(ch string, data any) error {
-	return p.Conn.Publish(ch, data.([]byte))
+func (p *Publisher) Publish(ch string, data []byte) error {
+	return p.Conn.Publish(ch, data)
 }
