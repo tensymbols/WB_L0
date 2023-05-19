@@ -31,5 +31,5 @@ func main() {
 
 	sub := subscriber.NewSubscriber(stanConn, wbService, "testsub")
 	sub.Subscribe(channelName)
-	<-ctx.Done()
+	<-ctx.Done() // context is canceled after termination signal
 }
