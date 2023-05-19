@@ -31,9 +31,5 @@ func main() {
 
 	sub := subscriber.NewSubscriber(stanConn, wbService, "testsub")
 	sub.Subscribe(channelName)
-<<<<<<< HEAD
-	<-ctx.Done()
-=======
 	<-ctx.Done() // context is canceled after termination signal
->>>>>>> parent of f433c86 (Delete main.go)
 }
